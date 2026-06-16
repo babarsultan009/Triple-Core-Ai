@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://www.techradar.com/news/what-is-ai-everything-you-need-to-know" />
+<img width="1200" height="475" alt="GHBanner" src="https://www.linkedin.com/pulse/anthropic-introduces-claude-mythos-joins-forces-82eie" />
 </div>
 
 
