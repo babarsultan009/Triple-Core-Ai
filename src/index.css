@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#0b131a] text-gray-100 antialiased selection:bg-amber-500/30 selection:text-amber-200;
+  }
+}
+
+/* Custom styles for animations & terminal font */
+
+.font-fable {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+}
+
+.font-mythos {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+.font-shadow {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.4);
+}
+
+/* Matrix rain background or dark terminal feel */
+.bg-shadow-grid {
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+}
+
+/* Golden/fantasy flow grid */
+.bg-fable-grid {
+  background-size: 30px 30px;
+  background-image: radial-gradient(circle, rgba(217, 119, 6, 0.02) 1px, transparent 1px);
+}
+
+/* Cosmic deep flow grid */
+.bg-mythos-grid {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
+}
+
+/* Pulse for matching borders */
+@keyframes neon-pulse-green {
+  0%, 100% { border-color: rgba(16, 185, 129, 0.3); box-shadow: 0 0 4px rgba(16, 185, 129, 0.1); }
+  50% { border-color: rgba(16, 185, 129, 0.8); box-shadow: 0 0 12px rgba(16, 185, 129, 0.3); }
+}
+
+@keyframes neon-pulse-amber {
+  0%, 100% { border-color: rgba(217, 119, 6, 0.3); box-shadow: 0 0 4px rgba(217, 119, 6, 0.1); }
+  50% { border-color: rgba(217, 119, 6, 0.8); box-shadow: 0 0 12px rgba(217, 119, 6, 0.3); }
+}
+
+@keyframes neon-pulse-purple {
+  0%, 100% { border-color: rgba(139, 92, 246, 0.3); box-shadow: 0 0 4px rgba(139, 92, 246, 0.1); }
+  50% { border-color: rgba(139, 92, 246, 0.8); box-shadow: 0 0 12px rgba(139, 92, 246, 0.3); }
+}
+
+.border-neon-active-green {
+  animation: neon-pulse-green 2s infinite ease-in-out;
+}
+
+.border-neon-active-amber {
+  animation: neon-pulse-amber 2s infinite ease-in-out;
+}
+
+.border-neon-active-purple {
+  animation: neon-pulse-purple 2s infinite ease-in-out;
+}
